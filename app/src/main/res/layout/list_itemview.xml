@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_imageTW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tryimages"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_alignTop="@id/main_imageTW"
+        android:src="@drawable/loaction"
+
+
+        />
+
+    <TextView
+        android:id="@+id/locationTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="PAKISTAN"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="12dp"
+        android:layout_alignBottom="@id/main_imageTW"
+        >
+
+    <TextView
+        android:id="@+id/placeNameTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginLeft="20dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        tools:text="swat"
+        />
+
+    <TextView
+        android:id="@+id/placeDetailTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        tools:text="North of pakistan"
+        />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@id/main_imageTW"
+            android:src="@drawable/fivestarspng"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/priceTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="$ 120"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignBottom="@id/main_imageTW"
+        android:layout_alignRight="@id/main_imageTW"
+        />
+
+
+
+</RelativeLayout>
